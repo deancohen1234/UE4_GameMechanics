@@ -19,6 +19,9 @@ public:
 	ASmashCharacter();
 
 protected:
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	int PlayerNumber = 0;
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
